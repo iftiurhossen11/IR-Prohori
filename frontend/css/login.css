@@ -1,0 +1,227 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #212121;
+    color: #ececec;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle at 20% 30%, #1a2a4a 0%, transparent 40%),
+                      radial-gradient(circle at 80% 70%, #1a1a3a 0%, transparent 40%);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* ================= WRAPPER ================= */
+.login-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* ================= CARD ================= */
+.login-card {
+    width: 100%;
+    max-width: 440px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    background-color: #171717;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.4s ease;
+}
+
+/* Custom scrollbar for card */
+.login-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.login-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.login-card::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 4px;
+}
+
+.login-card::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-logo {
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #ececec;
+    margin-bottom: 6px;
+}
+
+.login-subtitle {
+    font-size: 13px;
+    text-align: center;
+    color: #8a8a8a;
+    margin-bottom: 24px;
+}
+
+/* ================= FORM ================= */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-group label {
+    font-size: 12.5px;
+    color: #b0b0b0;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 11px 14px;
+    color: #ececec;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s ease;
+    width: 100%;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #4a9eff;
+}
+
+.input-group input::placeholder {
+    color: #5a5a5a;
+}
+
+.input-group select {
+    cursor: pointer;
+}
+
+.input-group input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ================= BUTTON ================= */
+.login-btn {
+    background: linear-gradient(135deg, #4a9eff, #2b6cb0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 14.5px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: all 0.15s ease;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.login-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(74, 158, 255, 0.4);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+/* ================= LINKS ================= */
+.login-links {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 12.5px;
+    color: #8a8a8a;
+}
+
+.login-links a {
+    color: #4a9eff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.login-links a:hover {
+    color: #3a8eef;
+    text-decoration: underline;
+}
+
+/* ================= FOOTER ================= */
+.login-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 11.5px;
+    flex-shrink: 0;
+}
+
+/* ================= ERROR ================= */
+.error-msg {
+    color: #ff5a5a;
+    font-size: 13px;
+    text-align: center;
+    margin-top: -8px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 28px 20px;
+        max-height: calc(100vh - 24px);
+    }
+
+    .login-title {
+        font-size: 20px;
+    }
+
+    .login-logo {
+        font-size: 38px;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 13.5px;
+        padding: 10px 12px;
+    }
+}
