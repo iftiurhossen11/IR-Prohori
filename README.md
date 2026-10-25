@@ -1,11 +1,11 @@
-##🛡️ IR Prohori
+🛡️ IR Prohori
 
 A security-first AI knowledge assistant for digital safety in Bangladesh.
 
 IR Prohori is a bilingual (Bangla + English) AI assistant that helps young people in Bangladesh find trusted information on online safety, cyberbullying prevention, and responsible digital citizenship.
 
 
-## 🎯 About
+🎯 About
 
 Developed by Md Iftiur Hossen Riyad at the Department of Cyber Security Engineering, University of Frontier Technology, Bangladesh (UFTB).
 
@@ -15,7 +15,7 @@ Developed by Md Iftiur Hossen Riyad at the Department of Cyber Security Engineer
 - 🧠 Cross-chat memory
 - 📱 Mobile responsive
 
-## ✨ Features
+✨ Features
 
 | Feature | Description |
 |---|---|
@@ -28,7 +28,7 @@ Developed by Md Iftiur Hossen Riyad at the Department of Cyber Security Engineer
 | 🎨 DeepSeek-style UI | Modern dark theme |
 | 📱 Mobile Responsive | Works on all screens |
 
-## 🛠️ Tech Stack
+🛠️ Tech Stack
 
 Backend:
 - FastAPI
@@ -43,14 +43,14 @@ Frontend:
 - Vanilla JavaScript
 - LocalStorage
 
-## 🚀 Getting Started
+🚀 Getting Started
 
-### Prerequisites
+Prerequisites
 
 - Python 3.10+
 - Groq API Key (Get one free at https://console.groq.com/)
 
-### Installation
+Installation
 
 1. Clone the repository:
    ```bash
